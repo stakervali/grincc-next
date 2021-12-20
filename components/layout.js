@@ -6,6 +6,7 @@ function Layout({children}) {
     return (
         <div className="h-screen  flex flex-col">
             <Header className="flex-grow-0" />
+            {/*<Header2 className="" />*/}
             <div className="flex-grow" >
             {children}
             </div>

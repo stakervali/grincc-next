@@ -6,6 +6,55 @@ import Footer from "../../components/footer";
 function Index(props) {
 
     let meetingSummaries = [
+        {
+            date:"December 7, 2021",
+            agendaPoints : [
+                "Upbit listing proposal.",
+                "Inflation bugs bounty.",
+                "Request for funding Groundskeeper @jankie Dec-Feb 2021/22.",
+                "Update on payment for @scilio's coinswap implementation - milestone 1.",
+                "Development update by @yeastplume"
+            ],
+            link: "/meetings/december-07-2021"
+        },
+        {
+            date:"November 23, 2021",
+            agendaPoints : [
+                "Bounty idea for adding Grin to THORchain native coin alongside monero & bitcoin.",
+                "Generation of transaction logs for public visibilty",
+                "Updates on Grin-Exchange progress! (Bisq, Kucoin, Gate.io, Hotbit)",
+                "Proposal for the Grin CC to buy around 0.5BTC 1 BTC (1BTC = 50k € ) worth in GRIN.",
+                "Funding slatepacks.com hosting costs",
+                "Discussion of Extending grin-wallet command line tool so that it can parse recovery seeds from a file",
+                "Review of @scilio 's coinswap implementation milestone 1 and approval to start on milestone2"
+            ],
+            link: "/meetings/november-23-2021"
+        },
+        {
+            date:"November 9, 2021",
+            agendaPoints : [
+                "Grin integration with Bisq DEX."
+            ],
+            link: "/meetings/november-09-2021"
+        },
+        {
+            date:"October 12, 2021",
+            agendaPoints : [
+                "Request for funding @davidtavarez Nov-Jan 2021/22.",
+                "Groundkeepers task list finalization.",
+                "Situation of Purchasing G1 MINI Asics.",
+                "Atomic swap funding payment delay."
+            ],
+            link: "/meetings/october-12-2021"
+        },
+        {date:"September 28, 2021",
+            agendaPoints : [
+                "Atomic Swap PR: status and next steps.",
+                "Implementation of multiple named wallets in the grin-wallet system by sheldonth.",
+                "Miners: next steps."
+            ],
+            link: "/meetings/september-28-2021"
+        },
         {date:"September 28, 2021",
          agendaPoints : [
              "Atomic Swap PR: status and next steps.",
@@ -92,7 +141,7 @@ function Index(props) {
 
     let meetingItems = meetingSummaries.map((d)=>{
         return (
-            <div className=" md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+            <div className=" md:w-full px-8 mb-8 py-6 border-l-2 border-gray-200 border-opacity-60">
                 <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">{d.date} meeting agenda</h2>
                 {/*<h3 className="text-lg">Agenda points</h3>*/}
                 {d.agendaPoints.map(p=>{
@@ -103,7 +152,7 @@ function Index(props) {
                         </p>
                     )
                 })}
-                <a className="text-purple inline-flex items-center" href={d.link} >View notes
+                <a className="text-primary inline-flex  items-center" href={d.link} >View notes
                     <RightArrow />
                 </a>
             </div>
@@ -119,7 +168,7 @@ function Index(props) {
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Grin Community meetings are held biweekly on tuesdays, generally the second and fourth weeks of the month.
                     Agenda for meetings are publicly open at <a href="https://github.com/grincc/agenda/issues">grincc/agenda</a> repo.
                     </p>
-                    <h2 className="mt-4 text-xs text-indigo-500 tracking-widest font-medium title-font mb-1"> <a href="https://github.com/grincc/agenda/issues/18"> Add a topic to next meeting's Agenda </a>  </h2>
+                    <h2 className="mt-4 py-1 px-8 text-xs bg-primary flex mx-auto w-max text-white rounded-md  tracking-widest font-medium title-font mb-1"> <a href="https://github.com/grincc/agenda/issues/18"> Add a topic to next meeting's Agenda </a>  </h2>
                 </div>
                 <div className="flex flex-wrap">
                     {meetingItems}

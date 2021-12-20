@@ -10,12 +10,8 @@ import DownRightArrow from "../../components/icons/downRightArrow";
 
 function September282021(props) {
     return (
-        <section  className="container px-6 py-24 mx-auto ">
-            <h1 className="text-3xl text-center mb-10" >Council Meeting Notes September 28, 2021</h1>
-
-
-
-
+        <section  className="my-container ">
+            <h1 className="header-1" >Council Meeting Notes September 28, 2021</h1>
 
             <p className="py-8">Community Council (CC) meeting held @ 10 UTC in grincoin#general channel on Keybase. Meeting lasted 40 min.
                 Notes are truncated, and conversations sorted based on topic and not always chronological. Quotes are edited for brevity and clarity, and not always exact.
@@ -37,6 +33,9 @@ function September282021(props) {
             </ul>
 
             <h1 className="text-2xl text-gray-800 pt-12 pb-4" >Agenda Points & Actions </h1>
+
+            <p>Last meeting's notes <a href="/meetings/september-14-2021" className="text-primary text-sm" > here</a> </p>
+
 
             <ul>
                 <li>  <a href="#point_0" className="text-primary">Opening <DownRightArrow/> </a> </li>

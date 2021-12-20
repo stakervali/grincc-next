@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'
+
 import DiscordIcon from "./icons/discordIcon";
 import GithubIcon from "./icons/githubIcon";
 import KeybaseIcon from "./icons/keybaseIcon";
@@ -14,8 +14,8 @@ function Footer(props) {
                     {/*     className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">*/}
                     {/*    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>*/}
                     {/*</svg>*/}
-                    <Image src="/logos/grincc_logo3.png" width={48} height={48} />
-                    <Image src="/logos/Grin-Community-Logo_edit_G.png" width={48} height={48} />
+                    {/*<Image src="/logos/grincc_logo3.png" width={48} height={48} />*/}
+                    <img src="/logos/Grin-Community-Logo_edit_G.png" width={48} height={48} />
 
                     <span className="ml-3 text-xl">Grin CC</span>
                 </a>
@@ -27,15 +27,15 @@ function Footer(props) {
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
 
-      <a className="ml-3 text-gray-500">
-        <Image src="/logos/DiscordLogo.png"  width={32} height={32}  />
+      <a href="https://discord.gg/5p4vCQY9km" className="ml-3 text-gray-500">
+        <img src="/logos/DiscordLogo.png"  width={32} height={32}  />
        </a>
-      <a className="ml-3 text-gray-500">
-        <Image src="/logos/github.png"  width={32} height={32}  />
+      <a href="https://github.com/grincc" className="ml-3 text-gray-500">
+        <img src="/logos/github.png"  width={32} height={32}  />
 
       </a>
-      <a className="ml-3 text-gray-500">
-        <Image src="/logos/keybase.png"  width={25} height={28}  />
+      <a href="https://keybase.io/team/grincoin" className="ml-3 text-gray-500">
+        <img src="/logos/keybase.png"  width={25} height={28}  />
 
       </a>
     </span>

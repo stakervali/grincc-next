@@ -1,53 +1,142 @@
-import React from 'react';
-import Image from 'next/image';
+import React, {useState} from 'react';
+import Link from 'next/link';
+import {Menu, Transition} from "@headlessui/react";
 
 function Header(props) {
+
+    const [navbarOpen, setNavbarOpen] = useState(false);
+
+    const onShowMenuClickHandler = (e) => {
+        console.log("onShowMenuClicked");
+        setNavbarOpen(!navbarOpen);
+    }
+
+    // tailwind headless doc https://headlessui.dev/react/menu
+    function MyLink(props) {
+        let {href, children, ...rest} = props
+        return (
+            <Link href={href}>
+                <a {...rest}>{children}</a>
+            </Link>
+        )
+    }
+
     return (
 
         <>
+            <nav className="bg-yellow">
 
-            <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content">
-                <div className="px-2 mx-2 navbar-start">
-                    <Image src="/logos/Grin-Community-Logo_edit_G.png" width={48} height={48} />
-                    <span className="text-lg font-bold ml-4">
-                         Grin CC
-                    </span>
+                <div className="container flex flex-wrap px-4 py-2 mx-auto lg-space-x-4">
 
-                </div>
+                    <img src="/logos/Grin-Community-Logo_edit_G.png" width={48} height={48}/>
+                    <Link href="/">
+                        <a href="#" className="inline-flex
+                      p-2
+                     text text-xl
+                     font-bold
+                      tracking-wider ">Grin CC</a>
+                    </Link>
 
-                <div className="hidden px-2 mx-2 navbar-center lg:flex">
-                    <div className="flex items-stretch">
-                        <a className="btn btn-ghost btn-sm rounded-btn">
-                            Meeting Notes
-                        </a>
-                        <a className="btn btn-ghost btn-sm rounded-btn">
-                            News
-                        </a>
-                        <a className="btn btn-ghost btn-sm rounded-btn">
-                            Documents
-                        </a>
-                        <a className="btn btn-ghost btn-sm rounded-btn">
-                            Finance
-                        </a>
+                    <button className="lg:hidden inline-flex items-center justify-center  text-dark-gray border border-gray-600 w-10 h-10 ml-auto rounded-md outline-none focus:outline-none "
+
+                            onClick={onShowMenuClickHandler}
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+
+
+                    <div className={"w-full lg:inline-flex lg:w-auto mt-2 lg:mt-0 " + (navbarOpen ? 'show flex' : 'hidden')}>
+                        <ul className="w-full
+                                       lg:w-auto
+                                       flex flex-col
+                                        lg:flex-row
+                                        pl-16
+                                        w-full space-y-2
+                                       lg:space-x-2 lg:space-y-0">
+                            <li>
+                                <Link href="/meetings">
+                                    <a
+                                        className="flex px-4 py-2 rounded-md font-medium text-dark-gray bg-yellow hover:bg-yellow-dark">
+                                        Meeting Notes
+                                    </a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/hub">
+                                    <a className="flex px-4 py-2 rounded-md font-medium text-dark-gray bg-yellow hover:bg-yellow-dark">
+                                        Hub
+                                    </a>
+                                </Link>
+                            </li>
+
+                            <li className="relative ">
+                                <Menu>
+                                    <Menu.Button className="flex  w-full lg:w-auto  px-4 py-2 rounded-md font-medium text-dark-gray bg-yellow hover:bg-yellow-dark">
+
+                                        Documents
+
+
+                                    </Menu.Button>
+                                    <Transition
+                                        enter="transition duration-100 ease-out"
+                                        enterFrom="transform scale-95 opacity-0"
+                                        enterTo="transform scale-100 opacity-100"
+                                        leave="transition duration-75 ease-out"
+                                        leaveFrom="transform scale-100 opacity-100"
+                                        leaveTo="transform scale-95 opacity-0"
+                                    >
+
+                                        <Menu.Items className="lg:absolute bg-purple right-0 rounded-md p-2 ">
+                                            <Menu.Item>
+                                                {({active}) => (
+                                                    <MyLink href="/docs/approval-scheme">
+                                                        <a className={`${active && 'bg-yellow'}` + " flex p-2 font-medium text-white-light rounded-md hover:bg-yellow-light hover:text-black"}>
+                                                            Approval Scheme
+                                                        </a>
+                                                    </MyLink>
+                                                )}
+                                            </Menu.Item>
+                                            <Menu.Item>
+                                                {({active}) => (
+                                                    <MyLink href="/docs/funding-requests">
+                                                    <a
+                                                        className={`${active && 'bg-yellow'}` + " flex p-2 font-medium text-white-light rounded-md hover:bg-yellow-light hover:text-black"} href="/account-settings"
+                                                    >
+                                                        Funding Requests
+                                                    </a>
+                                                    </MyLink>
+                                                )}
+                                            </Menu.Item>
+                                            <Menu.Item>
+                                                {({active}) => (
+                                                    <MyLink href="/docs/spending-guidelines">
+                                                        <a
+                                                            className={`${active && 'bg-yellow'}` + " flex p-2 font-medium text-white-light rounded-md hover:bg-yellow-light hover:text-black"} href="/account-settings"
+                                                        >
+                                                            Spending Guidelines
+                                                        </a>
+                                                    </MyLink>
+                                                )}
+                                            </Menu.Item>
+                                        </Menu.Items>
+                                    </Transition>
+                                </Menu>
+                            </li>
+                            <Link href="/finance">
+                            <a  className="flex px-4 py-2 rounded-md font-medium text-dark-gray bg-yellow hover:bg-yellow-dark">
+                                Finance
+                            </a>
+                            </Link>
+                        </ul>
                     </div>
+
+
                 </div>
-                <div className="navbar-end">
-                    <button className="btn btn-square btn-ghost">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                             className="inline-block w-6 h-6 stroke-current">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
-                        </svg>
-                    </button>
-                    <button className="btn btn-square btn-ghost">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                             className="inline-block w-6 h-6 stroke-current">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+
+            </nav>
+
         </>
     );
 }

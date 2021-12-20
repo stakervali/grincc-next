@@ -1,15 +1,15 @@
 import Link from 'next/link'
 
-export default function Home() {
+export default function ApprovalScheme() {
     return (
-        <div className="container">
-            <h1 className="text-6xl text-yellow" >Approval Scheme</h1>
+        <div className="my-container">
+            <h1 className="header-1" >Approval Scheme</h1>
 
             <p>
                 As all members of the GRIN community council all have owner roles on this repository, the following rules for approvals of pull-requests(PR) are suggested:
             </p>
 
-            <table className="table border-gray-200">
+            <table className="table border-gray-200 mt-8 mx-auto">
                 <thead>
                     <tr>
                         <th>Repository</th>

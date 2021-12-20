@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import {useEffect, useState} from "react";
-
+import DuplicateIcon from "../../components/icons/duplicateIcon";
 
 
 
@@ -30,26 +30,36 @@ export default function Home() {
     },[])
 
     return (
-        <div>
-            <h1 className="text-6xl text-yellow" >Crin Community Council Addresses</h1>
-            <h2>About</h2>
+        <div className="my-container">
+            <h1 className="header-1">Grin Community Council Addresses</h1>
+            <div className="py-4">
+            <h2 className="header-2">About</h2>
             <p>This document is the only valid list of addresses for donations, sponsorships, or other forms of payments intended for the Grin community council project.</p>
             <p>For GRIN Original Council payment addresses see <Link href="https://github.com/mimblewimble/grin-pm/blob/master/financials/addresses.md"><a>here</a></Link>.</p>
-            <h2>Verification</h2>
+            </div>
+            <h2 className="header-2">Verification</h2>
             <p>This document should be hosted on the following address:</p>
             <p><Link href="https://github.com/grincc/finance/addresses.md"><a>Grin Community Council Finance repository</a></Link> </p>
-            <h2>Contact</h2>
+            <h2 className="header-2">Contact</h2>
             <p>Any questions or concerns about authenticity can be raised publicly in the Grin community via <Link href="https://keybase.io/team/grincoin" ><a>keybase</a></Link>.</p>
 
-            <h2>List of addresses</h2>
-            <h3>Grin</h3>
+            <div className="mt-8 border rounded-md border-gray-400 p-4">
+            <h2 className="header-2">List of addresses</h2>
 
-            <p>grin1jezf3lkcexvj3ydjwanan6khs42fr4036guh0c4vkc04fyxarl6svjzuuh</p>
+            <h3 className="text-lg text-gray-700">Grin
+                {grinWalletStatus ? <span className="py-1 px-2 mx-2 rounded-full text-xs text-white bg-green-600">online</span> :
+                                <span className="py-1 px-2 mx-2 rounded-full text-xs text-white bg-red-600">offline</span>
+                }
+            </h3>
 
-            <h3>Bitcoin</h3>
-            <p> bc1qmdhmgmhd6j89225hzdh7dxqgmen3y2q0g4vgpez0tw9tkp4ae39qsqvuyl</p>
+            <p className="break-all"> grin1jezf3lkcexvj3ydjwanan6khs42fr4036guh0c4vkc04fyxarl6svjzuuh
 
+            </p>
 
+            <h3 className="text-lg text-gray-700">Bitcoin</h3>
+            <p className="break-all"> bc1qmdhmgmhd6j89225hzdh7dxqgmen3y2q0g4vgpez0tw9tkp4ae39qsqvuyl</p>
+
+            </div>
 
 
         </div>
