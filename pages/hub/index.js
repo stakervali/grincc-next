@@ -26,7 +26,7 @@ export default function Hub() {
 
                     <li><RhombusItem /> <b>Grin Mail:</b> Automatically send and receive transactions via email (last commit 05-07-2021)
                         <p className="pl-8">
-                            <a href="https://github.com/grinventions/" className="text-primary">https://github.com/grinventions/</a>
+                            <a href="https://github.com/aixinrock/grinmail/blob/main/README-en.md" className="text-primary">https://github.com/aixinrock/grinmail/blob/main/README-en.md</a>
                         </p>
                     </li>
 

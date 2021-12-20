@@ -55,14 +55,7 @@ function Index(props) {
             ],
             link: "/meetings/september-28-2021"
         },
-        {date:"September 28, 2021",
-            agendaPoints : [
-                "Atomic Swap PR: status and next steps.",
-                "Implementation of multiple named wallets in the grin-wallet system by sheldonth.",
-                "Miners: next steps."
-            ],
-            link: "/meetings/september-28-2021"
-        },
+
         {date:"September 14, 2021",
             agendaPoints : [
                 "review of task-list from @jankie1800 and @defistaker.",
@@ -71,7 +64,7 @@ function Index(props) {
                 "Organization of MW GRIN / Berlin Meetup group.",
                 "Discuss options to update grin website and development of grincc website."
             ],
-            link: "https://google.com"
+            link: "meetings/september-14-2021"
         },
         {date:"August 31, 2021",
             agendaPoints : [
@@ -80,7 +73,7 @@ function Index(props) {
                 "Compensation for CC meeting notes documentation for @jankie1800 and @stakervali",
                 "Request for Funding @scilio (CoinSwap Implementation )"
             ],
-            link: "https://google.com"
+            link: "meetings/august-31-2021"
         },
         {date:"August 17, 2021",
             agendaPoints : [
@@ -88,7 +81,7 @@ function Index(props) {
                 "Complete voting for mining equipment purchase.",
                 "GRIN CC security proofs (Proposed procedure will be voted.)."
             ],
-            link: "https://google.com"
+            link: "meetings/august-17-2021"
         },
         {date:"August 10, 2021",
             agendaPoints : [
@@ -105,7 +98,7 @@ function Index(props) {
                 "Manual confirmation of an incoming transaction mimblewimble/grin-rfcs#84",
                 "Community minining equipment purchase"
             ],
-            link: "https://google.com"
+            link: "meetings/august-03-2021"
         },
         {date:"July 20, 2021",
             agendaPoints : [
@@ -115,7 +108,7 @@ function Index(props) {
                 "Funding request : https://forum.grin.mw/t/request-for-funding-mwgrin-fr/8888/15"
 
             ],
-            link: "https://google.com"
+            link: "meetings/july-20-2021"
         },
         {date:"July 06, 2021",
             agendaPoints : [
@@ -125,7 +118,7 @@ function Index(props) {
                 "Mining equipment purchase",
                 "Determining an hour of meeting that is convenient for all council members"
             ],
-            link: "https://google.com"
+            link: "meetings/july-06-2021"
         },
         {date:"June 22, 2021",
             agendaPoints : [
@@ -135,7 +128,7 @@ function Index(props) {
                 "Request for funding : @mwgrin_fr video tutorials for wallet-cli usage scenarios",
                 "Grin fund for mining"
             ],
-            link: "https://google.com"
+            link: "meetings/june-22-2021"
         },
     ]
 
