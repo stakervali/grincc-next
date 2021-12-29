@@ -7,6 +7,15 @@ function Index(props) {
 
     let meetingSummaries = [
         {
+            date:"December 21, 2021",
+            agendaPoints : [
+                "Preview of grincc website.",
+                "Request for funding Groundskeeper @stakervali Dec-Feb 2021/22.",
+                "Sponsoring the Area 51 Community drafting lottery with e.g. 51 ツ in Price money.",
+            ],
+            link: "/meetings/december-21-2021"
+        },
+        {
             date:"December 7, 2021",
             agendaPoints : [
                 "Upbit listing proposal.",
