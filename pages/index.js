@@ -1,9 +1,15 @@
-import React from 'react';
+    import React from 'react';
 import RightArrow from "../components/icons/rightArrow";
 import Check from "../components/icons/check";
 import Link from 'next/link'
 import UserIcon from "../components/icons/userIcon";
 
+//  I think it's a good idea to transfer some financial resources and opportunities &responsibilities to the wider community
+//  think one aim here (at least my personal understanding) is this frees up "core" to focus on dev tasks on the rust impl. And defers community focused things to a separate council.
+//  https://gist.github.com/yeastplume/5d1913c7dc40c40f409ffcfe8fa9b094
+//  https://forum.grin.mw/t/call-for-grin-community-candidates-for-additional-fund-granting-control/8521
+//     https://forum.grin.mw/t/fund-alternative-a-split-fund-proposal/8476/21
+//     https://forum.grin.mw/t/council-evolution-clarification/9021
 
 function Index(props) {
 
@@ -22,10 +28,10 @@ function Index(props) {
                     <h1 className="text-2xl text-gray-800 pt-8 pb-4" >Community Attendence</h1>
                     <ul>
                         <li><UserIcon /> anynomous</li>
-                        <li><UserIcon /> dtavarez</li>
-                        <li><UserIcon /> future3000</li>
                         <li><UserIcon /> hendi</li>
                         <li><UserIcon /> mcmmike</li>
+                        <li><UserIcon /> dtavarez</li>
+                        <li><UserIcon /> future3000</li>
                         <li><UserIcon /> paouky</li>
                     </ul>
                 </div>
