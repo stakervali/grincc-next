@@ -35,20 +35,20 @@ function August102021(props) {
             <div className="py-4">
                 <h1 className="header-2" >Short Summary</h1>
 
-                <p>
+                <p className=" "><RhombusItem />
                     NHash proposal for 12 x G1 Mini and 1 x G1
-                </p>
-                <ul>
-                    <li>G1 mini 1.2Gps ±10%： \$799/unit </li>
 
-                    <li> G1 36Gps±10%：\$23,999/unit </li>
+                <ul className="pl-12 list-disc">
+                    <li>G1 mini 1.2Gps ±10%： $799/unit </li>
 
-                    <li>Shipping cost to Germany by UPS, 5~8 working days, \$547.</li>
+                    <li> G1 36Gps±10%：$23,999/unit </li>
 
-                    <li>Total \$34,134</li>
+                    <li>Shipping cost to Germany by UPS, 5~8 working days, $547.</li>
+
+                    <li>Total $34,134</li>
 
                 </ul>
-
+                </p>
 
                 <ul className="space-y-2">
                     <li><RhombusItem /> CC miners must confirm their avg electric $ per kw, which they will be paid a USD equivalent of Grin in each month.</li>
@@ -85,7 +85,7 @@ function August102021(props) {
             <div className="px-4" >
 
                 {/*Issue 1*/}
-                <h1 id="issue_1"  className="text-xl mt-10 mb-4 px">1. </h1>
+                <h1 id="issue_1"  className="text-xl mt-10 mb-4 px">1. Discussion of community feedback and formal plan for community mining</h1>
                 <ReactMarkdown className="meeting-text"  remarkPlugins={[remarkGfm]}  >
                     {`
 * __anynomous__ : As we can see there are only two agenda point for today, discuss the mining and vote on the purchase of mining equipment

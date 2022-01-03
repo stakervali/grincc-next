@@ -26,14 +26,14 @@ function Header(props) {
         <>
             <nav className="bg-yellow">
 
-                <div className="container flex flex-wrap px-4 py-2 mx-auto lg-space-x-4">
+                <div className="container flex flex-wrap px-4 py-4 mx-auto lg-space-x-4">
 
                     <img src="/logos/Grin-Community-Logo_edit_G.png" width={48} height={48}/>
                     <Link href="/">
                         <a href="#" className="inline-flex
                       p-2
                      text text-xl
-                     font-bold
+                     font-bold text-black
                       tracking-wider ">Grin CC</a>
                     </Link>
 
@@ -47,25 +47,26 @@ function Header(props) {
                     </button>
 
 
-                    <div className={"w-full lg:inline-flex lg:w-auto mt-2 lg:mt-0 " + (navbarOpen ? 'show flex' : 'hidden')}>
+                    <div className={"w-full lg:inline-flex lg:w-auto mt-2  lg:my-auto " + (navbarOpen ? 'show flex' : 'hidden')}>
                         <ul className="w-full
                                        lg:w-auto
                                        flex flex-col
                                         lg:flex-row
+
                                         pl-16
                                         w-full space-y-2
                                        lg:space-x-2 lg:space-y-0">
                             <li>
                                 <Link href="/meetings">
                                     <a
-                                        className="flex px-4 py-2 rounded-md font-medium text-dark-gray bg-yellow hover:bg-yellow-dark">
+                                        className="flex px-4 py-2 rounded-md font-medium text-gray-700 bg-yellow hover:bg-yellow-dark">
                                         Meeting Notes
                                     </a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/hub">
-                                    <a className="flex px-4 py-2 rounded-md font-medium text-dark-gray bg-yellow hover:bg-yellow-dark">
+                                    <a className="flex px-4 py-2 rounded-md font-medium text-gray-700 bg-yellow hover:bg-yellow-dark">
                                         Hub
                                     </a>
                                 </Link>
@@ -73,7 +74,7 @@ function Header(props) {
 
                             <li className="relative ">
                                 <Menu>
-                                    <Menu.Button className="flex  w-full lg:w-auto  px-4 py-2 rounded-md font-medium text-dark-gray bg-yellow hover:bg-yellow-dark">
+                                    <Menu.Button className="flex  w-full lg:w-auto  px-4 py-2 rounded-md font-medium text-gray-700 bg-yellow hover:bg-yellow-dark">
 
                                         Documents
 
@@ -125,7 +126,7 @@ function Header(props) {
                                 </Menu>
                             </li>
                             <Link href="/finance">
-                            <a  className="flex px-4 py-2 rounded-md font-medium text-dark-gray bg-yellow hover:bg-yellow-dark">
+                            <a  className="flex px-4 py-2 rounded-md font-medium text-gray-700 bg-yellow hover:bg-yellow-dark">
                                 Finance
                             </a>
                             </Link>

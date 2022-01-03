@@ -97,7 +97,7 @@ function Index(props) {
                 "Discussion of community feedback and formal plan for community mining.",
                 "Voting for final decision."
             ],
-            link: "https://google.com"
+            link: "meetings/august-10-2021"
         },
         {date:"August 03, 2021",
             agendaPoints : [
@@ -170,7 +170,9 @@ function Index(props) {
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Grin Community meetings are held biweekly on tuesdays, generally the second and fourth weeks of the month.
                     Agenda for meetings are publicly open at <a href="https://github.com/grincc/agenda/issues">grincc/agenda</a> repo.
                     </p>
-                    <h2 className="mt-4 py-1 px-8 text-xs bg-primary flex mx-auto w-max text-white rounded-md  tracking-widest font-medium title-font mb-1"> <a href="https://github.com/grincc/agenda/issues/18"> Add a topic to next meeting's Agenda </a>  </h2>
+                    <h2 className="mt-4 py-2 px-8 text-sm bg-primary flex mx-auto w-max text-white rounded-md  tracking-widest font-medium title-font mb-1">
+                        <a href="https://github.com/grincc/agenda/issues/31" className="text-white"> Add a topic to next meeting's Agenda </a>
+                    </h2>
                 </div>
                 <div className="flex flex-wrap">
                     {meetingItems}

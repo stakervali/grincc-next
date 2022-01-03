@@ -3,6 +3,7 @@ import React from 'react';
 import DiscordIcon from "./icons/discordIcon";
 import GithubIcon from "./icons/githubIcon";
 import KeybaseIcon from "./icons/keybaseIcon";
+import GrinMWIcon from "./icons/grinmwIcon";
 
 function Footer(props) {
     return (
@@ -27,6 +28,10 @@ function Footer(props) {
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
 
+       <a href="https://grin.mw" className="ml-3 text-gray-500">
+
+             <GrinMWIcon />
+       </a>
       <a href="https://discord.gg/5p4vCQY9km" className="ml-3 text-gray-500">
         <img src="/logos/DiscordLogo.png"  width={32} height={32}  />
        </a>
@@ -36,7 +41,6 @@ function Footer(props) {
       </a>
       <a href="https://keybase.io/team/grincoin" className="ml-3 text-gray-500">
         <img src="/logos/keybase.png"  width={25} height={28}  />
-
       </a>
     </span>
             </div>

@@ -124,7 +124,7 @@ We will make it public here: https://github.com/grincc/security
 
                 <ReactMarkdown  className="meeting-text"  remarkPlugins={[remarkGfm]}  >
                     {` 
-    * __mcmmike__ : We also agreed on a base set of rules for spending and made it public: https://github.com/grincc/docs/blob/main/spending-guidelines.md  any comments / ideas etc ?
+* __mcmmike__ : We also agreed on a base set of rules for spending and made it public: https://github.com/grincc/docs/blob/main/spending-guidelines.md  any comments / ideas etc ?
 
     If not you are welcome to open a PR or issues to discuss this with us anytime.
 
@@ -225,8 +225,8 @@ Then we agree @__hendi__ hosting the wallet and until David has this view key pr
     What are other opinions about this, Mini's or simply go for one G1
 
     Let me make that a vote thing:
-    1) 1x G1  (  __ux041__, __anynomous__ voted)
-    2) 42 G1 Mini ( __cekickafa__, __satoshcrat__, __dtavarez__, __dtavarez__, __phyro__ voted)
+    >1) 1x G1  (  __ux041__, __anynomous__ voted)
+    >2) 42 G1 Mini ( __cekickafa__, __satoshcrat__, __dtavarez__, __dtavarez__, __phyro__ voted)
 
 
  
