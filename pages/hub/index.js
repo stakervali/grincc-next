@@ -1,6 +1,6 @@
 import Link from "next/link";
-import RhombusItem from "../../components/icons/rhombusItem";
-import DownRightArrow from "../../components/icons/downRightArrow";
+import RhombusItem from "../../assets/icons/rhombusItem";
+import DownRightArrow from "../../assets/icons/downRightArrow";
 
 export default function Hub() {
     return (

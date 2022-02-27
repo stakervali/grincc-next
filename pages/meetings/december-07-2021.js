@@ -1,11 +1,11 @@
 import React from 'react';
-import UserIcon from "../../components/icons/userIcon";
-import RhombusItem from "../../components/icons/rhombusItem";
+import UserIcon from "../../assets/icons/userIcon";
+import RhombusItem from "../../assets/icons/rhombusItem";
 import ReactMarkdown from "react-markdown";
 import Markdown from "react-markdown";
-import RightArrow from "../../components/icons/rightArrow";
+import RightArrow from "../../assets/icons/rightArrow";
 import remarkGfm from "remark-gfm";
-import DownRightArrow from "../../components/icons/downRightArrow";
+import DownRightArrow from "../../assets/icons/downRightArrow";
 
 
 
@@ -19,7 +19,7 @@ function December072021(props) {
                 Notes are truncated, and conversations sorted based on topic and not always chronological. Quotes are edited for brevity and clarity, and not always exact.
             </p>
             <div className="py-4">
-            <h1 className="text-2xl text-gray-800 pt-8 pb-4" >Community Attendence</h1>
+            <h1 className="header-2" >Community Attendence</h1>
             <ul>
 
                 <li><UserIcon /> anynomous</li>

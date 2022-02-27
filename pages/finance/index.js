@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import {useEffect, useState} from "react";
-import DuplicateIcon from "../../components/icons/duplicateIcon";
+import DuplicateIcon from "../../assets/icons/duplicateIcon";
 
 
 
@@ -46,7 +46,7 @@ export default function Home() {
             <div className="mt-8 border rounded-md border-gray-400 p-4">
             <h2 className="header-2">List of addresses</h2>
 
-            <h3 className="text-lg text-gray-700">Grin
+            <h3 className="text-lg text-gray-700 dark:text-gray-100">Grin
                 {grinWalletStatus ? <span className="py-1 px-2 mx-2 rounded-full text-xs text-white bg-green-600">online</span> :
                                 <span className="py-1 px-2 mx-2 rounded-full text-xs text-white bg-red-600">offline</span>
                 }
@@ -56,7 +56,7 @@ export default function Home() {
 
             </p>
 
-            <h3 className="text-lg text-gray-700">Bitcoin</h3>
+            <h3 className="text-lg text-gray-700 dark:text-gray-100">Bitcoin</h3>
             <p className="break-all"> bc1qmdhmgmhd6j89225hzdh7dxqgmen3y2q0g4vgpez0tw9tkp4ae39qsqvuyl</p>
 
             </div>

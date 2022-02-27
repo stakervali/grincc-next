@@ -33,12 +33,31 @@ module.exports = {
           light: '#ffffff',
           DEFAULT: '#f2f5ff',  //Ghost white
           dark: '#bfc2cc'
+        },
+        salmon : {
+          DEFAULT: '#f49097'
+        },
+        grinblue:{
+          DEFAULT:"#1C46FF"
+        },
+        gringreen:{
+          DEFAULT:"#81FF0F"
         }
-      }
+
+      },
+      backgroundImage: (theme) => ({
+        'bg-grincc-logo-black':
+            "url('https://images.unsplash.com/photo-1629651480694-edb8451b31aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80')",
+        'bg-grincc-logo-transparent':
+            "url('https://images.unsplash.com/photo-1629651480694-edb8451b31aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80')",
+
+      }),
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundImage: ['dark'],
+    },
   },
   plugins: [
      require('daisyui'),

@@ -2,7 +2,7 @@ import React from 'react';
 
 function GrinMWIcon(props) {
     return (
-        <svg  style={{'fill-rule':'evenodd','clip-rule':'evenodd','stroke-linejoin':'round','stroke-miterlimit':2,width:"32px",height:"32px"}}>
+        <svg  style={{'fillRule':'evenodd','clipRule':'evenodd','strokelinejoin':'round','strokeMiterlimit':2,width:"32px",height:"32px"}}>
 
             <g transform="matrix(0.131148,0,0,0.131148,0,0)">
                 <rect id="canvas_background" x="-1" y="-1" width="582" height="402" style={{'fill':'none',width:"32px",height:"32px"}}/>

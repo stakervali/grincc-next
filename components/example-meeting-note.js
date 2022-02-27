@@ -1,16 +1,14 @@
 import React from 'react';
-import UserIcon from "../../components/icons/userIcon";
-import RhombusItem from "../../components/icons/rhombusItem";
+import UserIcon from "../../assets/icons/userIcon";
+import RhombusItem from "../../assets/icons/rhombusItem";
 import ReactMarkdown from "react-markdown";
-import Markdown from "react-markdown";
-import RightArrow from "../../components/icons/rightArrow";
 import remarkGfm from "remark-gfm";
-import DownRightArrow from "../../components/icons/downRightArrow";
+import DownRightArrow from "../../assets/icons/downRightArrow";
 
 
 
 
-function November232021(props) {
+export default function February012022(props) {
     return (
         <section  className="my-container ">
             <h1 className="header-1" >Council Meeting Notes December 7, 2021</h1>
@@ -140,4 +138,3 @@ __Meeting adjourned__
     );
 }
 
-export default November232021;

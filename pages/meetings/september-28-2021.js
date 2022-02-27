@@ -1,11 +1,11 @@
 import React from 'react';
-import UserIcon from "../../components/icons/userIcon";
-import RhombusItem from "../../components/icons/rhombusItem";
+import UserIcon from "../../assets/icons/userIcon";
+import RhombusItem from "../../assets/icons/rhombusItem";
 import ReactMarkdown from "react-markdown";
 import Markdown from "react-markdown";
-import RightArrow from "../../components/icons/rightArrow";
+import RightArrow from "../../assets/icons/rightArrow";
 import remarkGfm from "remark-gfm";
-import DownRightArrow from "../../components/icons/downRightArrow";
+import DownRightArrow from "../../assets/icons/downRightArrow";
 
 
 function September282021(props) {
@@ -16,7 +16,7 @@ function September282021(props) {
             <p className="py-8">Community Council (CC) meeting held @ 10 UTC in grincoin#general channel on Keybase. Meeting lasted 40 min.
                 Notes are truncated, and conversations sorted based on topic and not always chronological. Quotes are edited for brevity and clarity, and not always exact.
             </p>
-            <h1 className="text-2xl text-gray-800 pt-8 pb-4" >Community Attendence</h1>
+            <h1 className="header-2" >Community Attendence</h1>
             <ul>
                 <li><UserIcon /> anynomous</li>
                 <li><UserIcon /> jankie1800</li>

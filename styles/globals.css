@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    @apply text-primary;
+    @apply text-primary dark:text-indigo-400;
 }
 
 
@@ -34,13 +34,13 @@ p {
 }
 
 .my-container {
-        @apply container px-6 py-24 mx-auto text-gray-600;
+        @apply container px-6 py-24 mx-auto text-gray-600  dark:bg-black dark:text-gray-300;
 }
 
 .header-1 {
-    @apply text-2xl sm:text-3xl font-medium  mb-4 text-gray-900 text-center;
+    @apply text-2xl sm:text-3xl font-medium  mb-4 text-gray-900 dark:text-gray-100  text-center ;
 }
 
 .header-2 {
-    @apply text-lg sm:text-xl text-gray-900 font-medium   mb-2 ;
+    @apply text-lg sm:text-xl text-gray-900 font-medium  dark:text-gray-100  mb-2 ;
 }

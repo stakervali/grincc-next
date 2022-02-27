@@ -1,11 +1,11 @@
 import React from 'react';
-import UserIcon from "../../components/icons/userIcon";
-import RhombusItem from "../../components/icons/rhombusItem";
+import UserIcon from "../../assets/icons/userIcon";
+import RhombusItem from "../../assets/icons/rhombusItem";
 import ReactMarkdown from "react-markdown";
 import Markdown from "react-markdown";
-import RightArrow from "../../components/icons/rightArrow";
+import RightArrow from "../../assets/icons/rightArrow";
 import remarkGfm from "remark-gfm";
-import DownRightArrow from "../../components/icons/downRightArrow";
+import DownRightArrow from "../../assets/icons/downRightArrow";
 
 
 
@@ -19,7 +19,7 @@ function August102021(props) {
                 Notes are truncated, and conversations sorted based on topic and not always chronological. Quotes are edited for brevity and clarity, and not always exact.
             </p>
             <div className="py-4">
-                <h1 className="text-2xl text-gray-800 pt-8 pb-4" >Community Attendence</h1>
+                <h1 className="header-2" >Community Attendence</h1>
                 <ul>
 
                     <li><UserIcon /> anynomous</li>
@@ -50,7 +50,7 @@ function August102021(props) {
                 </ul>
                 </p>
 
-                <ul className="space-y-2">
+                <ul className="space-y-2 list-none">
                     <li><RhombusItem /> CC miners must confirm their avg electric $ per kw, which they will be paid a USD equivalent of Grin in each month.</li>
                     <li><RhombusItem /> CC miners must send all their Grin rewards to a public Grin wallet </li>
                     <li><RhombusItem /> At end of each month CC miners are paid their total electric cost for the month from the public Grin wallet, based on a 30-day moving average of GRIN/USD. </li>

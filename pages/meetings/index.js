@@ -1,11 +1,47 @@
-import React from 'react';
-import RightArrow from "../../components/icons/rightArrow";
-import Check from "../../components/icons/check";
+import React, {useEffect, useState} from 'react';
+import RightArrow from "../../assets/icons/rightArrow";
+import Check from "../../assets/icons/check";
 import Footer from "../../components/footer";
 
 function Index(props) {
 
     let meetingSummaries = [
+        {
+            date:"February 15, 2022",
+            agendaPoints : [
+                "Update on Grin community website with @defistaker .",
+                " Update on PIBD development with @yeastplume.",
+            ],
+            link: "/meetings/february-15-2022"
+        },
+        {
+            date:"February 01, 2022",
+            agendaPoints : [
+                "Update on community miners purchase order and mining operation cost and profit.",
+                "Request for funding @dtavarez Feb-Apr 2022.",
+            ],
+            link: "/meetings/february-01-2022"
+        },
+        {
+            date:"January 18, 2022",
+            agendaPoints : [
+                "Organizing community for extending grin ecosystem.",
+                "Update on groundskeeper work and the clear delegation of items.",
+                "Discussion on platform for grin-wallet UI (possible frameworks Qt, Orbtk, React/Web, vanilla Web).",
+                "Current situation of scriptless scripts.",
+            ],
+            link: "/meetings/january-18-2022"
+        },
+        {
+            date:"January 4, 2022",
+            agendaPoints : [
+                "Organizing community for extending grin ecosystem.",
+                "Update on groundskeeper work and the clear delegation of items.",
+                "Discussion on platform for grin-wallet UI (possible frameworks Qt, Orbtk, React/Web, vanilla Web).",
+                "Current situation of scriptless scripts.",
+            ],
+            link: "/meetings/january-04-2022"
+        },
         {
             date:"December 21, 2021",
             agendaPoints : [
@@ -143,12 +179,12 @@ function Index(props) {
 
     let meetingItems = meetingSummaries.map((d)=>{
         return (
-            <div className=" md:w-full px-8 mb-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">{d.date} meeting agenda</h2>
+            <div key={d.date} className=" md:w-full px-8 mb-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                <h2 className="header-2">{d.date} meeting agenda</h2>
                 {/*<h3 className="text-lg">Agenda points</h3>*/}
                 {d.agendaPoints.map(p=>{
                     return (
-                        <p className="leading-relaxed text-base my-2">
+                        <p key={p} className="leading-relaxed text-base my-2">
                             <Check />
                             {p}
                         </p>
@@ -161,27 +197,41 @@ function Index(props) {
         )
     })
 
-    return (
+    const [nextAgendaLink,setNextAgendaLink] = useState("");
 
-        <section className="text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto">
+    useEffect(() => {
+
+        fetch("https://api.github.com/repos/grincc/agenda/issues").
+            then(res=>{
+                res.json().then(issues=>{
+
+                    issues = issues.filter(i=> i.title.startsWith("Agenda: Community Council"));
+
+                    const latestIssue = issues.reduce((prev,current)=>{
+                        return (prev.number>current.number) ? prev : current
+                    });
+                    setNextAgendaLink(latestIssue.html_url);
+                })
+        })
+
+    }, []);
+
+
+    return (
+            <div className="my-container ">
                 <div className="flex flex-col text-center w-full mb-20">
-                    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Grin Community Meetings </h1>
+                    <h1 className="header-1">Grin Community Meetings </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Grin Community meetings are held biweekly on tuesdays, generally the second and fourth weeks of the month.
                     Agenda for meetings are publicly open at <a href="https://github.com/grincc/agenda/issues">grincc/agenda</a> repo.
                     </p>
                     <h2 className="mt-4 py-2 px-8 text-sm bg-primary flex mx-auto w-max text-white rounded-md  tracking-widest font-medium title-font mb-1">
-                        <a href="https://github.com/grincc/agenda/issues/31" className="text-white"> Add a topic to next meeting's Agenda </a>
+                        <a href={nextAgendaLink} className="text-white dark:text-gray-200"> Add a topic to next meeting's Agenda </a>
                     </h2>
                 </div>
                 <div className="flex flex-wrap">
                     {meetingItems}
                 </div>
-
-
             </div>
-        </section>
-
     );
 }
 

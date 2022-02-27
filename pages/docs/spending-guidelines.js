@@ -1,4 +1,4 @@
-import RhombusItem from "../../components/icons/rhombusItem";
+import RhombusItem from "../../assets/icons/rhombusItem";
 
 export default function Home() {
     return (

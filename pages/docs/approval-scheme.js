@@ -9,15 +9,15 @@ export default function ApprovalScheme() {
                 As all members of the GRIN community council all have owner roles on this repository, the following rules for approvals of pull-requests(PR) are suggested:
             </p>
 
-            <table className="table border-gray-200 mt-8 mx-auto">
-                <thead>
-                    <tr>
-                        <th>Repository</th>
+            <table className="table border-green-200 mt-8 mx-auto  dark:bg-black  ">
+                <thead   >
+                    <tr >
+                        <th   >Repository</th>
                         <th>Required members of CC for PR</th>
                         <th>notes</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody >
                     <tr>
                         <td><Link href="https://github.com/grincc/agenda"><a>agenda</a></Link> </td>
                          <td className="text-center">1</td>
