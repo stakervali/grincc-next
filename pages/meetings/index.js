@@ -7,9 +7,18 @@ function Index(props) {
 
     let meetingSummaries = [
         {
+            date:"March 1, 2022",
+            agendaPoints : [
+                "Provide more exposure to Bisq and other exchanges.",
+                "Overview on Grin CC github page and web site.",
+                "Bounties for training videos on Bisq and Tradeogre.",
+                "Discuss request for funding Groundskeeper @jankie / Mar-May 2022.",
+            ],
+            link: "/meetings/march-01-2022"
+        },{
             date:"February 15, 2022",
             agendaPoints : [
-                "Update on Grin community website with @defistaker .",
+                "Update on Grin community website with @defistaker.",
                 " Update on PIBD development with @yeastplume.",
             ],
             link: "/meetings/february-15-2022"
