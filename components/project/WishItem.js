@@ -13,7 +13,7 @@ export default function WishItem({wish,children}){
                     {/*</div>*/}
                     <div className="md:flex-grow">
                         <h2 className="text-2xl font-medium text-gray-900 dark:text-gray-200 title-font mb-2">{wish.title}</h2>
-                        <p className="leading-relaxed">{children} </p>
+                        <p className="leading-relaxed">{wish.description} </p>
 
                         <a href={wish.link} className="text-indigo-500 inline-flex items-center mt-4">Discussion
                             <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokWidth="2"

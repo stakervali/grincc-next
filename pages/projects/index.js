@@ -15,6 +15,7 @@ export default function Index() {
 
     const projectInfos = [
         {
+        id: "coinswap-implementation",
         name: "Coinswap Implementation",
         owner: "Scillo",
         status: PROJECTSTATUS.INPROGRESS,
@@ -31,6 +32,7 @@ export default function Index() {
         fundingAmount : "£50,000"
     } ,
         {
+            id: "improving-grin++",
             name: "Improving Grin++ ",
             owner: "davidtavarez",
             status: PROJECTSTATUS.FINISHED,
@@ -47,6 +49,7 @@ export default function Index() {
         },
 
         {
+            id: "improving-grin++-(2)",
             name: "Improving Grin++ (II) ",
             owner: "davidtavarez",
             status: PROJECTSTATUS.INPROGRESS,

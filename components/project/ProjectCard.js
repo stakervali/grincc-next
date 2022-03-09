@@ -20,7 +20,8 @@ import {PROJECTSTATUS,MILESTONESTATUS} from "../../constants";
  * @returns {JSX.Element}
  * @constructor
  */
-export default function ProjectCard({name,
+export default function ProjectCard({id,
+                                        name,
                                      owner,
                                      status,
                                      description,
@@ -55,7 +56,7 @@ export default function ProjectCard({name,
         })
 
         return (
-            <div
+            <div id={id}
                 className="h-full p-6 rounded-lg border-2 border-gray-300  dark:border-gray-600  flex flex-col relative overflow-hidden">
                 {( (PROJECTSTATUS.INPROGRESS === status) &&  <span  className="bg-grinblue text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">IN PROGRESS</span> )}
                 {( (PROJECTSTATUS.FINISHED === status) &&  <span  className="bg-gringreen text-white dark:text-black px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">COMPLETED</span> )}
