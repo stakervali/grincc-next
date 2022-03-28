@@ -5,7 +5,8 @@ import Footer from "../../components/footer";
 
 function Index(props) {
 
-    let meetingSummaries = [
+    // These are hardcoded meetingSummaries
+    const meetingSummaries = [
         {
             date:"March 1, 2022",
             agendaPoints : [
@@ -186,12 +187,13 @@ function Index(props) {
         },
     ]
 
-    let meetingItems = meetingSummaries.map((d)=>{
+    // Converts meetingSummary to meetingItemView
+    const createMeetingView = (meetingSummary) =>{
         return (
-            <div key={d.date} className=" md:w-full px-8 mb-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                <h2 className="header-2">{d.date} meeting agenda</h2>
+            <div key={meetingSummary.date} className=" md:w-full px-8 mb-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                <h2 className="header-2">{meetingSummary.date} meeting agenda</h2>
                 {/*<h3 className="text-lg">Agenda points</h3>*/}
-                {d.agendaPoints.map(p=>{
+                {meetingSummary.agendaPoints.map(p=>{
                     return (
                         <p key={p} className="leading-relaxed text-base my-2">
                             <Check />
@@ -199,35 +201,92 @@ function Index(props) {
                         </p>
                     )
                 })}
-                <a className="text-primary inline-flex  items-center" href={d.link} >View notes
+                <a className="text-primary inline-flex  items-center" href={meetingSummary.link} >View notes
                     <RightArrow />
                 </a>
             </div>
         )
-    })
+    }
+
+    const getAllMeetingItems = () => meetingSummaries.map(summary=>createMeetingView(summary));
+
+    const [filterQuery,setFilterQuery] = useState("");
+
+    const [meetingItems,setMeetingItems] = useState([]);
 
     const [nextAgendaLink,setNextAgendaLink] = useState("");
 
+    const searchEndpoint = (query) => `/api/search?q=${query}`;
+
+    useEffect(()=>{
+        fetch("https://api.github.com/repos/grincc/agenda/issues").
+        then(res=>{
+            res.json().then(issues=>{
+
+                issues = issues.filter(i=> i.title.startsWith("Agenda: Community Council"));
+
+                const latestIssue = issues.reduce((prev,current)=>{
+                    return (prev.number>current.number) ? prev : current
+                });
+                setNextAgendaLink(latestIssue.html_url);
+            })
+        })
+    },[])
+
     useEffect(() => {
 
-        fetch("https://api.github.com/repos/grincc/agenda/issues").
-            then(res=>{
-                res.json().then(issues=>{
+        if (filterQuery===""){
+             setMeetingItems(getAllMeetingItems);
+        }else{
+            fetch(searchEndpoint(filterQuery))
+                .then(res =>res.json())
+                .then(res=>{
+                    console.log(res.results);
+                    console.log(res.results.length);
+                    const ids =  res.results;
+                    console.log("ids",ids);
+                    if (ids.length===0){
+                         setMeetingItems([]);
+                    }else{
+                        const filteredMeetingSummaries = meetingSummaries.filter(summary=>{
+                            const summaryId = summary.link.replace("/meetings/","");
 
-                    issues = issues.filter(i=> i.title.startsWith("Agenda: Community Council"));
+                            return ids.indexOf(summaryId) >=0;
+                        })
 
-                    const latestIssue = issues.reduce((prev,current)=>{
-                        return (prev.number>current.number) ? prev : current
-                    });
-                    setNextAgendaLink(latestIssue.html_url);
-                })
-        })
+                        console.log(filteredMeetingSummaries.map(s=>s.link))
+                        setMeetingItems(filteredMeetingSummaries.map(summary=>createMeetingView(summary)));
+                    }
+                }
+                )
+        }
 
-    }, []);
+    }, [filterQuery]);
+
+    const handleFilterQueryChange = (e)=>{
+        if (e.target.value.length>2){
+            console.log('searching for ',e.target.value)
+            setFilterQuery(e.target.value.toLowerCase());
+        }else{
+            setFilterQuery("");
+        }
+    }
 
 
-    return (
+    return (<>
+            <div className={" pt-8 pr-8 flex justify-end ml-8"}>
+
+                <input type="text" id="searchQuery" onChange={(e)=>handleFilterQueryChange(e)}
+                       className="h-10  bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                <span className={"bg-primary p-2 h-10"}>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    </span>
+            </div>
             <div className="my-container ">
+
                 <div className="flex flex-col text-center w-full mb-20">
                     <h1 className="header-1">Grin Community Meetings </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Grin Community meetings are held biweekly on tuesdays, generally the second and fourth weeks of the month.
@@ -237,10 +296,13 @@ function Index(props) {
                         <a href={nextAgendaLink} className="text-white dark:text-gray-200"> Add a topic to next meeting's Agenda </a>
                     </h2>
                 </div>
+
+
                 <div className="flex flex-wrap">
                     {meetingItems}
                 </div>
             </div>
+        </>
     );
 }
 

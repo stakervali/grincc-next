@@ -35,11 +35,11 @@ export default function Home() {
             <div className="py-4">
             <h2 className="header-2">About</h2>
             <p>This document is the only valid list of addresses for donations, sponsorships, or other forms of payments intended for the Grin community council project.</p>
-            <p>For GRIN Original Council payment addresses see <Link href="https://github.com/mimblewimble/grin-pm/blob/master/financials/addresses.md"><a>here</a></Link>.</p>
+            <p>For GRIN Original Council payment addresses see <Link href="https://github.com/grincc/finance/blob/main/addresses.md"><a>here</a></Link>.</p>
             </div>
             <h2 className="header-2">Verification</h2>
             <p>This document should be hosted on the following address:</p>
-            <p><Link href="https://github.com/grincc/finance/addresses.md"><a>Grin Community Council Finance repository</a></Link> </p>
+            <p><Link href="https://github.com/grincc/finance"><a>Grin Community Council Finance repository</a></Link> </p>
             <h2 className="header-2">Contact</h2>
             <p>Any questions or concerns about authenticity can be raised publicly in the Grin community via <Link href="https://keybase.io/team/grincoin" ><a>keybase</a></Link>.</p>
 

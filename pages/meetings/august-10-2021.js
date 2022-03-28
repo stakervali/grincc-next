@@ -13,7 +13,7 @@ import DownRightArrow from "../../assets/icons/downRightArrow";
 function August102021(props) {
     return (
         <section  className="my-container ">
-            <h1 className="header-1" >Council Meeting Notes August10, 2021</h1>
+            <h1 className="header-1" >Council Meeting Notes August 10, 2021</h1>
 
             <p className="py-8">Community Council (CC) meeting held @ 10 UTC in grincoin#general channel on Keybase. Meeting lasted 60 min.
                 Notes are truncated, and conversations sorted based on topic and not always chronological. Quotes are edited for brevity and clarity, and not always exact.
