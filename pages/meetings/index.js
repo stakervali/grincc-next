@@ -8,6 +8,17 @@ function Index(props) {
     // These are hardcoded meetingSummaries
     const meetingSummaries = [
         {
+            date:"March 15, 2022",
+            agendaPoints : [
+                "Maintaining Grin Telegram+Keybase-discord bridge service.",
+                "Request for funding @jankie.",
+                "Request for funding @cekickafa.",
+                "Organizing a community sub-team with focus on the increase of Grin adoption.",
+                "Increasing Bisq awareness in Grin Community.",
+            ],
+            link: "/meetings/march-15-2022"
+        },
+        {
             date:"March 1, 2022",
             agendaPoints : [
                 "Provide more exposure to Bisq and other exchanges.",
