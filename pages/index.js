@@ -24,7 +24,7 @@ function Index(props) {
                         <li><UserIcon /> mcmmike</li>
                         <li><UserIcon /> dtavarez</li>
                         <li><UserIcon /> future3000</li>
-                        <li><UserIcon /> paouky</li>
+                        <li><UserIcon /> mwgrin_fr</li>
                     </ul>
                 </div>
                 <h2 className="header-2">Background</h2>
