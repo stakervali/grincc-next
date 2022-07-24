@@ -64,6 +64,22 @@ export default function Index() {
             approveDate: "26 January 2022",
             approveLink : "https://forum.grin.mw/t/request-for-funding-davidtavarez-feb-apr-2022/9518/15",
             fundingAmount : "€15,000"
+        },
+        {
+            id: "QR-slatepacks-in-cli",
+            name: "Slatepacks as QR codes in CLI",
+            owner: "cliik",
+            status: PROJECTSTATUS.FINISHED,
+            description: "This projects aims to generate slatepacks as QR code to have better usability.",
+            milestones: [
+                { description : "Implementation of grin-wallet",status: MILESTONESTATUS.COMPLETED},
+                { description : "Approval of PR in mimblewimble/grin-wallet repo", status:MILESTONESTATUS.COMPLETED },
+            ],
+            githubLink: "https://github.com/mimblewimble/grin-wallet/pull/655",
+            forumLink : "",
+            approveDate: "-",
+            approveLink : "",
+            fundingAmount : "-"
         }
 
     ]
