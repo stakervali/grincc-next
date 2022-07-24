@@ -10,11 +10,7 @@ export default function Wishlist({props}) {
             description: <p> A related discussion on the forum can be found <a href='https://forum.grin.mw/t/investigation-formal-proofs-alternate-verifier-implementation/8712/16'> here</a>.</p>
 
         },
-        {
-            title: "Display slatepacks as QR codes in CLI",
-            link: "https://github.com/stakervali/grin-wishlist/issues/12",
-            description: "This feature would improve user experience for transactions."
-        },
+
         {
             title: "One-time use slatepack addresses for wallet",
             link: "https://github.com/stakervali/grin-wishlist/issues/11",
@@ -90,8 +86,7 @@ export default function Wishlist({props}) {
             <WishItem wish={wishes[8]}>  </WishItem>
             <WishItem wish={wishes[9]}>  </WishItem>
             <WishItem wish={wishes[10]}>  </WishItem>
-            <WishItem wish={wishes[11]}>  </WishItem>
-            <WishItem wish={wishes[12]}> Atomic swap has been worked by @GeneFerneau   </WishItem>
+            <WishItem wish={wishes[11]}> Atomic swap has been worked by @GeneFerneau   </WishItem>
         </div>
     )
 }
