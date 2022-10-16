@@ -11,7 +11,7 @@ import DownRightArrow from "../../assets/icons/downRightArrow";
 export default function February012022(props) {
     return (
         <section  className="my-container ">
-            <h1 className="header-1" >Council Meeting Notes December 7, 2021</h1>
+            <h1 className="header-1" >Council Meeting Notes December 7, 2022</h1>
 
             <p className="py-8">Community Council (CC) meeting held @ 10 UTC in grincoin#general channel on Keybase. Meeting lasted - min.
                 Notes are truncated, and conversations sorted based on topic and not always chronological. Quotes are edited for brevity and clarity, and not always exact.
@@ -36,7 +36,8 @@ export default function February012022(props) {
             <div className="py-4">
                 <h1 className="header-2" >Short Summary</h1>
                 <ul className="space-y-2">
-                    <li><RhombusItem /> upbit listing proposal turns out to be a scam.</li>
+                    <li><RhombusItem />  </li>
+                    <li><RhombusItem />  </li>
 
                 </ul>
             </div>
@@ -46,7 +47,7 @@ export default function February012022(props) {
                 <h1 className="header-2" >Voting Results</h1>
 
                 <ul className="space-y-2">
-                    <li>Vote to offer inflation bugs bounty (by OC) VOTE PASSED (YES)  </li>
+                    <li>No voting has been held. </li>
                 </ul>
             </div>
 
@@ -57,11 +58,11 @@ export default function February012022(props) {
                 <p>Last meeting's notes <a href="/meetings/november-23-2021" className="text-primary text-sm" > here</a> </p>
 
                 <ul className="space-y-2">
-                    <li>1. Upbit listing proposal <a href="#issue_1" className="text-primary">  <DownRightArrow/> </a> </li>
-                    <li>2. Inflation bugs bounty <a href="#issue_2" className="text-primary"><DownRightArrow/> </a></li>
-                    <li>3. Request for funding Groundskeeper @jankie Dec-Feb 2021/22<a href="#issue_3" className="text-primary"><DownRightArrow/>  </a> </li>
-                    <li>4. Update on payment for @scilio's coinswap implementation - milestone 1<a href="#issue_4" className="text-primary"> <DownRightArrow/>  </a> </li>
-                    <li>5. Development update by @yeastplume<a href="#issue_5" className="text-primary"> <DownRightArrow/>  </a> </li>
+                    <li>1.   <a href="#issue_1" className="text-primary">  <DownRightArrow/> </a> </li>
+                    <li>2.   <a href="#issue_2" className="text-primary"><DownRightArrow/> </a></li>
+                    <li>3.  <a href="#issue_3" className="text-primary"><DownRightArrow/>  </a> </li>
+                    <li>4.  <a href="#issue_4" className="text-primary"> <DownRightArrow/>  </a> </li>
+                    <li>5.  <a href="#issue_5" className="text-primary"> <DownRightArrow/>  </a> </li>
                 </ul>
             </div>
 
@@ -108,32 +109,20 @@ export default function February012022(props) {
 __Meeting adjourned__
                 
 `}
-
-
                 </ReactMarkdown>
-
-
-
             </div>
-
-
             {/* Action POINTS */}
             <div className="py-4">
                 <h1 className="header-2">Action Points</h1>
 
                 <ul className="space-y-2">
-                    <li><RhombusItem />Details for inflation bugs bounty will be discussed internally by OC.</li>
-                    <li><RhombusItem />Groundkeeper's task list will be clarified for better performance measurability.</li>
-                    <li><RhombusItem />jankie's groundkeeper's fund proposal will be voted by CC and announced on the forum.</li>
-                    <li><RhombusItem />@scillo's payment for coinswap implementation - milestone 1 will be transferred in the next 1-2 weeks and announced on the forum.</li>
+                    <li><RhombusItem /> </li>
+                    <li><RhombusItem /> </li>
+                    <li><RhombusItem /> </li>
+                    <li><RhombusItem />  </li>
 
                 </ul>
             </div>
-
-
-
-
-
         </section>
     );
 }

@@ -8,6 +8,121 @@ function Index(props) {
     // These are hardcoded meetingSummaries
     const meetingSummaries = [
         {
+            date:"September 27, 2022",
+            agendaPoints : [
+                "Request for funding @cekickafa September -December 15 2022",
+                "Testnet miner issue & Request for funding, @mattczt, October 2022."
+            ],
+            link: "/meetings/september-27-2022"
+        }, {
+            date:"September 13, 2022",
+            agendaPoints : [
+                "Community Biweekly meeting Schedule",
+                "Bounty for writing a CFFI wrapper of secp256k1-zkp fork.",
+                "Retroactive Grants like idea."
+            ],
+            link: "/meetings/september-13-2022"
+        },{
+            date:"August 30, 2022",
+            agendaPoints : [
+                "Community Counsil Members ''proof of life'' request discussion by @johndavies24. ",
+            ],
+            link: "/meetings/august-30-2022"
+        }, {
+            date:"August 16, 2022",
+            agendaPoints : [
+                "Request for funding @davidtavarez August-December 2022.",
+                "Community Mining Project update.",
+                "Discussion about Coinswap milestone 2."
+            ],
+            link: "/meetings/august-16-2022"
+        },   {
+            date:"August 02, 2022",
+            agendaPoints : [
+                " Coinswap Milestone 2 Review & Approval to being work on Milestone 3. ",
+
+            ],
+            link: "/meetings/august-02-2022"
+        },   {
+            date:"July 19, 2022",
+            agendaPoints : [
+                "Status of current GRIN Testnet is discussed.",
+                "Running a Faucet for testnet purpose is discussed. ",
+                "Number of seed nodes is discussed.",
+            ],
+            link: "/meetings/july-19-2022"
+        }, {
+            date:"July 05, 2022",
+            agendaPoints : [
+                "Request for funding @cekickafa and @satoshocrat",
+                "GRIN Transaction Contract flow . ",
+            ],
+            link: "/meetings/july-05-2022"
+        },{
+            date:"June 21, 2022",
+            agendaPoints : [
+                "Telegram bot bounty.",
+                "Bounty suggestions.",
+                "Request for funding @cekickafa. ",
+            ],
+            link: "/meetings/june-21-2022"
+        },{
+            date:"June 07, 2022",
+            agendaPoints : [
+                "Secure Bulletin Board System and Relay system discussions. ",
+                "Adaptor Signature Atomic Swap completion and RFC. ",
+                "Hiring and retaining long-term developers.",
+                "Situation of MWixnet and review by @yeastplume.",
+            ],
+            link: "/meetings/june-07-2022"
+        },{
+            date:"May 24, 2022",
+            agendaPoints : [
+                "Mining decentralization and exchanges Grin implementation has been discussed.",
+                "Make sure current Asic vendors are not scammers.",
+                "Grin Mining documentation and tutorial should be prepared.",
+                "Adding telegram link to community web site instead of main site has been discussed.",
+            ],
+            link: "/meetings/may-24-2022"
+        },
+        {
+            date:"May 10, 2022",
+            agendaPoints : [
+                "Current situation of PIBD has been discussed. @yeastplume will work on RFC.",
+                "Grin meet-up ideas/details has been discussed like location/date.",
+                "Grin-wallet contract prototype can be tested by community.",
+                "Grin CC's last year performance has been reviewed and future projections has been made. ",
+            ],
+            link: "/meetings/may-10-2022"
+        },
+        {
+            date:"April 26, 2022",
+            agendaPoints : [
+                "Request for funding @davidtavarez May-July 2022 is discussed.",
+                "Grin book donation/funding request format is discussed."
+            ],
+            link: "/meetings/april-26-2022"
+        },
+        {
+            date:"April 12, 2022",
+            agendaPoints : [
+                "Community Council Member Vote (Paoukys' Replacement).",
+                "After Meeting Follow up With @Scilio.",
+                "New Developer Resource Section on Grin Community Github.",
+                "Update from Groundskeeper Cekickafa and former Groundskeeper Defistaker.",
+                "Potential for In-Person Grin Community Meet Up.",
+            ],
+            link: "/meetings/april-12-2022"
+        },
+        {
+            date:"March 29, 2022",
+            agendaPoints : [
+                "On-ramping of active community members .",
+                " Community wish-list.",
+            ],
+            link: "/meetings/march-29-2022"
+        },
+        {
             date:"March 15, 2022",
             agendaPoints : [
                 "Maintaining Grin Telegram+Keybase-discord bridge service.",

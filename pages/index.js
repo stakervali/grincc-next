@@ -6,11 +6,8 @@ import UserIcon from "../assets/icons/userIcon";
 
 
 function Index(props) {
-
-
-    return (
-
-        <section className="text-gray-600 dark:bg-text-300 body-font">
+   return (
+         <section className="text-gray-600 dark:bg-text-300 body-font">
             <div className="my-container ">
                 <h1 className="header-1" >Grin Community Council</h1>
                 <p>Grin Community Council is <a className="text-primary" href="https://forum.grin.mw/t/call-for-grin-community-candidates-for-additional-fund-granting-control/8521/13">formed</a> from valued community members with remarkable contributions to Grin in 2021 May.
