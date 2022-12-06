@@ -8,9 +8,41 @@ function Index(props) {
     // These are hardcoded meetingSummaries
     const meetingSummaries = [
         {
+            date:"November 22, 2022",
+            agendaPoints : [
+                "Grin CC should be paused until further notice and funds must be returned..",
+                "Proposal to add a payment management roll to the Groundskeeper duties.",
+                "Unlock the Python CFFI secp256k1-zkp wrapper and Ledger hardware wallet support bounties.."
+            ],
+            link: "/meetings/november-22-2022"
+        },
+        {
+            date:"November 08, 2022",
+            agendaPoints : [
+                "MW/Grin Workshop+Hackaton in Istanbul.",
+                "Request for funding duty tax bill for testnet miner sent to @mattczt3."
+            ],
+            link: "/meetings/november-08-2022"
+        },
+        {
+            date:"October 25, 2022",
+            agendaPoints : [
+                "Release v5.2.0-alpha.2 and testings.",
+            ],
+            link: "/meetings/october-25-2022"
+        },
+        {
+            date:"October 11, 2022",
+            agendaPoints : [
+                "Request for funding @satoshocrat October - December 15 2022.",
+                "Test Miner donations & locations."
+            ],
+            link: "/meetings/october-11-2022"
+        },
+        {
             date:"September 27, 2022",
             agendaPoints : [
-                "Request for funding @cekickafa September -December 15 2022",
+                "Request for funding @cekickafa September -December 15 2022.",
                 "Testnet miner issue & Request for funding, @mattczt, October 2022."
             ],
             link: "/meetings/september-27-2022"
