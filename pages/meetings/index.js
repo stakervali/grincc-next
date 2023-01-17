@@ -8,6 +8,32 @@ function Index(props) {
     // These are hardcoded meetingSummaries
     const meetingSummaries = [
         {
+            date:"January 03, 2022",
+            agendaPoints : [
+                "Python cffi secp256k1-zkp wrapper - bounty..",
+
+            ],
+            link: "/meetings/january-03-2022"
+        },
+        {
+            date:"December 20, 2022",
+            agendaPoints : [
+                "Request for funding @davidtavarez January-April 2023",
+                "Request for funding @cobragrin Dec-March 2023",
+                "Request @jaw709 Jan-April 2023.@navie funding Dec 22- Q1 2023",
+                "Wallet issues; mimblewimble/grin-wallet.owner api"
+            ],
+            link: "/meetings/december-20-2022"
+        },
+        {
+            date:"December 06, 2022",
+            agendaPoints : [
+                "Vote for Dissolving GrinCC and return funds to OC.",
+                "Give our opinion on the mining farm in the CC Telegram chat.",
+            ],
+            link: "/meetings/december-06-2022"
+        },
+        {
             date:"November 22, 2022",
             agendaPoints : [
                 "Grin CC should be paused until further notice and funds must be returned..",
