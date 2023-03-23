@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {Menu, Transition} from "@headlessui/react";
 import ThemeButton from "./themeButton";
+import GrinPostLogo from '../assets/icons/GrinNewsLetterLogo.jpg'
 
 function Header(props) {
 
@@ -19,6 +21,15 @@ function Header(props) {
                 <a {...rest}>{children}</a>
             </Link>
         )
+    }
+
+    const GrinPostIcon = (props)=>{
+        return (<Image
+                src={GrinPostLogo}
+                alt={'GrinPost Logo'}
+                width={'24px'}
+                height={'24px'}
+        />)
     }
 
     return (
@@ -137,6 +148,14 @@ function Header(props) {
                                     Finance
                                 </a>
                             </Link>
+
+                            <li>
+                            <a href={'https://grinpost.substack.com/'} target='_blank'
+                                className="flex px-4 py-2 rounded-md font-medium text-gray-700 dark:text-white bg-yellow dark:bg-black  hover:bg-yellow-dark dark:hover:bg-gray-700">
+                                <GrinPostIcon />
+                            </a>
+
+                            </li>
 
 
                         </ul>
