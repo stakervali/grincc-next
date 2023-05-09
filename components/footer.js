@@ -6,6 +6,7 @@ import KeybaseIcon from "../assets/icons/keybaseIcon";
 import GrinMWIcon from "../assets/icons/grinmwIcon";
 import Link from "next/link";
 
+
 function Footer(props) {
     return (
         <footer className="text-gray-600 body-font dark:bg-black dark:text-gray-300 ">
@@ -38,12 +39,13 @@ function Footer(props) {
                     {/*<a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" rel="noopener noreferrer"*/}
                     {/*   target="_blank">@knyttneve</a>*/}
                 </p>
-                <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start items-center ">
 
                <a href="https://grin.mw" className="ml-3 text-gray-500"><GrinMWIcon/></a>
                <a href="https://discord.gg/5p4vCQY9km" className="ml-3 text-gray-500 "><img src="/logos/DiscordLogo.png" width={32} height={32}/></a>
                <a href="https://github.com/grincc" className="ml-3 text-gray-500"><img src="/logos/github.png" width={32} height={32}/></a>
                <a href="https://keybase.io/team/grincoin" className="ml-3 text-gray-500"><img src="/logos/keybase.png" width={25} height={28}/></a>
+               <a href="https://t.me/grinprivacy" className="ml-1 text-gray-500"><img src="/logos/telegram.png" width={36} height={36}/></a>
                 </span>
             </div>
         </footer>
