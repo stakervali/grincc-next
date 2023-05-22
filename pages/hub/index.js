@@ -394,13 +394,6 @@ export default function Hub() {
                             <li>Deposit-Withdrawal is supported.</li>
                         </ul>
                     </li>
-                    <li><RhombusItem /><a href="https://www.bkex.com/trade/GRIN_USDT" className="text-primary pl-2 ">Bkex </a>
-                        <ul className="pl-12 list-disc">
-                            <li>KYC</li>
-                            <li>Deposit-Withdrawal is supported (using memo system)</li>
-                            <li>TOR Method</li>
-                        </ul>
-                    </li>
                     <li><RhombusItem /><a href="https://www.bitforex.com/en/spot/grin_usdt" className="text-primary pl-2 ">Bitforex </a>
                         <ul className="pl-12 list-disc">
                             <li>KYC</li>
