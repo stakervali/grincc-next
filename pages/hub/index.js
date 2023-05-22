@@ -408,12 +408,6 @@ export default function Hub() {
                             <li>https old method <i>(Grin++, Ironbelly wallets don't support https tx method.)</i></li>
                         </ul>
                     </li>
-                    <li><RhombusItem /><a href="https://www.hotbit.io/exchange?symbol=GRIN_USDT" className="text-primary pl-2 ">Hotbit </a>
-                        <ul className="pl-12 list-disc">
-                            <li>KYC</li>
-                            <li>https old method <i>(Grin++, Ironbelly wallets don't support https tx method.)</i></li>
-                        </ul>
-                    </li>
                     <li><RhombusItem /><a href="https://100x.app/" className="text-primary pl-2 ">100x APP </a>
                         <ul className="pl-12 list-disc">
                             <li>No KYC, peer to peer. While in beta requires whitelisting on Discord</li>
