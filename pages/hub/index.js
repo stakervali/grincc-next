@@ -360,7 +360,6 @@ export default function Hub() {
                     <li><RhombusItem /><a href="https://grinmint.com/" className="text-primary pl-2">Grinmint</a></li>
                     <li><RhombusItem /><a href="https://solo-grin.2miners.com/" className="text-primary pl-2">2Miners SOLO</a></li>
                     <li><RhombusItem /><a href="https://grin.herominers.com/" className="text-primary pl-2">HeroMiners</a></li>
-                    <li><RhombusItem /><a href="https://woolypooly.com/" className="text-primary pl-2">WoolyPooly</a></li>
                 </ul>
             </div>
 
