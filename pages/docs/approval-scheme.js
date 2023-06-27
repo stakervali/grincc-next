@@ -24,17 +24,22 @@ export default function ApprovalScheme() {
                          <td>CC meeting notes, etc</td>
                     </tr>
                     <tr>
+                        <td><Link href="https://github.com/grincc/hub"><a>hub</a></Link> </td>
+                         <td className="text-center">1</td>
+                         <td>code, tools, sites, memes, marketing, art</td>
+                    </tr>
+                    <tr>
                         <td><Link href="https://github.com/grincc/security"><a>security</a></Link> </td>
                         <td  className="text-center">4</td>
                         <td>signing, verifying</td>
                     </tr>
                     <tr>
-                        <td><Link href="https://github.com/grincc/finance"><a>agenda</a></Link> </td>
+                        <td><Link href="https://github.com/grincc/finance"><a>finance</a></Link> </td>
                         <td  className="text-center">4</td>
                         <td>public CC fund documentation</td>
                     </tr>
                     <tr>
-                        <td><Link href="https://github.com/grincc/docs"><a>agenda</a></Link> </td>
+                        <td><Link href="https://github.com/grincc/docs"><a>docs</a></Link> </td>
                         <td  className="text-center">2</td>
                         <td>CC related documents</td>
                     </tr>
