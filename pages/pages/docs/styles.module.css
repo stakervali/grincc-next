@@ -1,0 +1,55 @@
+.my-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Update to align items to the top */
+  width: 100%;
+  min-height: 100vh; /* Update to min-height to ensure content is at the top */
+  padding-top: 50px; /* Adjust the value to increase or decrease the space at the top */
+}
+
+.header-1 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.yellow-header {
+  background-color: #fef102;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Update to align text to the left */
+  gap: 20px;
+  text-align: center;
+}
+
+.paragraph {
+  width: 100%;
+  text-align: start;
+}
+
+.table {
+  table-layout: auto;
+  font-size: 1em;
+  width: max-content;
+  padding: 10px;
+}
+
+.border-frame {
+  border: 1px solid black;
+}
+
+.border-frame td,
+.border-frame th {
+  border: 2px solid black;
+}
+
+.dark {
+  background-color: var(--dark-background); /* Add dark background color variable */
+  color: var(--dark-text-color); /* Add dark text color variable */
+}
