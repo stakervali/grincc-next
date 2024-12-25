@@ -28,6 +28,24 @@ export default function Hub() {
                             <a href="https://github.com/mimblewimble/grin" className="text-primary">https://github.com/mimblewimble/grin</a>
                         </p>
                     </li>
+                    <li><RhombusItem />  <b>Forum:</b> Discuss everything Grin
+                        <p className="pl-8">
+                            <a href="https://forum.grin.mw/" className="text-primary">https://forum.grin.mw/</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem />  <b>Grin Community Council site:</b>
+                        <p className="pl-8">
+                            <a href="https://grincc.mw/" className="text-primary">https://grincc.mw/</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem />  <b>Grin Community Council Github:</b>
+                        <p className="pl-8">
+                            <a href="https://github.com/grincc/" className="text-primary">https://github.com/grincc/</a>
+                        </p>
+                    </li>
+
+                    
+
                 </ul>
             </div>
 
@@ -38,6 +56,11 @@ export default function Hub() {
                     <li><RhombusItem /> <b> grin-wallet: </b>Command line (Rust), backend for Niffler and Ironbelly wallet.
                         <p className="pl-8">
                             <a href="https://github.com/mimblewimble/grin-wallet" className="text-primary"> https://github.com/mimblewimble/grin-wallet </a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>GRIM GUI wallet:</b>
+                        <p className="pl-8">
+                            <a href="https://getgrin.github.io/" className="text-primary">https://getgrin.github.io/</a>
                         </p>
                     </li>
                     <li><RhombusItem /> <b> Grin++: </b>  Wallet (written in C++), supports desktop and mobile.
@@ -77,6 +100,21 @@ export default function Hub() {
                             <a href="https://slatepacks.com/" className="text-primary">https://slatepacks.com/</a>
                         </p>
                     </li>
+                    <li><RhombusItem /> <b>Grinily:</b> Apparel, mugs, Grin goodies - pay with ツ
+                        <p className="pl-8">
+                            <a href="https://grinily.com/" className="text-primary">https://grinily.com/</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Grinbux:</b> Web traffic exchange, get free ツ by viewing ads
+                        <p className="pl-8">
+                            <a href="https://grinbux.com/" className="text-primary">https://grinbux.com/</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>OnlyGrins:</b> Win ツ lottery
+                        <p className="pl-8">
+                            <a href="https://onlygrins.com/" className="text-primary">https://onlygrins.com/</a>
+                        </p>
+                    </li>
                 </ul>
             </div>
 
@@ -99,6 +137,19 @@ export default function Hub() {
                             <a href="https://scan.grin.money/chart/block" className="text-primary">https://scan.grin.money/chart/block</a>
                         </p>
                     </li>
+                    <li><RhombusItem /> <b>Grincoin Explorer:</b>
+                        <p className="pl-8">
+                            <a href="https://grincoin.org/" className="text-primary">https://grincoin.org/</a>
+                            <span className="text-sm text-gray-600 ml-2">
+                                [<a href="https://github.com/aglkm/grin-explorer" className="text-primary">github</a>]
+                            </span>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Grin block explorer2:</b>
+                        <p className="pl-8">
+                            <a href="http://107.175.127.117/mainnet/blocks" className="text-primary">http://107.175.127.117/mainnet/blocks</a>
+                        </p>
+                    </li>
                 </ul>
             </div>
 
@@ -109,8 +160,7 @@ export default function Hub() {
                 <ul className="pl-4 pt-2 space-y-4" >
                     <li><RhombusItem />  <b>KeyBase:</b> Grincoin on keybase is the best place for technical discussions and to join general meetings.
                         <p className="pl-8">
-                            <a href="https://keybase.io/team/grincoin" className="text-primary">https://keybase.io/team/grincoin</a>
-
+                            <a href="https://keybase.io/team/grincoin" className="text-primary">https://keybase.io/team/grincoin</a>                            
                         </p>
                     </li>
 
@@ -129,6 +179,11 @@ export default function Hub() {
                     <li><RhombusItem />  <b>Grin++ Telegram group:</b> Any problems or questions with regard to Grin++ wallet, ask here.
                         <p className="pl-8">
                             <a href="https://t.me/GrinPP" className="text-primary">https://t.me/GrinPP</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>GRIM WALLET Telegram group:</b>
+                        <p className="pl-8">
+                            <a href="https://t.me/grim_app" className="text-primary">https://t.me/grim_app</a>
                         </p>
                     </li>
 
@@ -174,6 +229,11 @@ export default function Hub() {
                         <p className="pl-8">
                             <a href="https://www.youtube.com/channel/UCdTLEB6xPSuJqye6NXbs1HQ/videos" className="text-primary">https://www.youtube.com/channel/UCdTLEB6xPSuJqye6NXbs1HQ/videos</a>
                         </p>
+                    </li>                   
+                    <li><RhombusItem /> <b>Gitter:</b>
+                        <p className="pl-8">
+                            <a href="https://gitter.im/grin_community/Lobby" className="text-primary">https://gitter.im/grin_community/Lobby</a>
+                        </p>
                     </li>
                 </ul>
 
@@ -209,9 +269,44 @@ export default function Hub() {
                             <a href="https://github.com/mcdallas/gringotts-rust" className="text-primary"> https://github.com/mcdallas/gringotts-rust </a>
                         </p>
                     </li>
+                    <li><RhombusItem />  <b>AwesomeGrin:</b> A curated list of Grin services, softwares and tools
+                        <p className="pl-8">
+                            <a href="https://github.com/quentinlesceller/awesome-grin" className="text-primary">https://github.com/quentinlesceller/awesome-grin</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem />  <b>Grin-recovery:</b> A Python based Grin wallet recovery script
+                        <p className="pl-8">
+                            <a href="https://github.com/Anynomouss/grin_recovery" className="text-primary">https://github.com/Anynomouss/grin_recovery</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem />  <b>Grin vanity address generator:</b> Slatepack vanity address generator
+                        <p className="pl-8">
+                            <a href="https://github.com/MakisChristou/grin-vanity" className="text-primary">https://github.com/MakisChristou/grin-vanity</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Grin Bot:</b> Grin bot written in Rust for Telegram and Keybase
+                        <p className="pl-8">
+                            <a href="https://github.com/alexbyrnes/grinbot" className="text-primary">https://github.com/alexbyrnes/grinbot</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Grin payment calculation, node mapping & more:</b>
+                        <p className="pl-8">
+                            <a href="https://github.com/grincc/hub/tree/main/scripts" className="text-primary">https://github.com/grincc/hub/tree/main/scripts</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Grin-recovery:</b> Python based wallet recovery script (40,000 passwords/second)
+                        <p className="pl-8">
+                            <a href="https://github.com/Anynomouss/grin_recovery" className="text-primary">https://github.com/Anynomouss/grin_recovery</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Testnet Faucet:</b>
+                        <p className="pl-8">
+                            <a href="https://github.com/quentinlesceller/awesome-grin#faucet" className="text-primary">https://github.com/quentinlesceller/awesome-grin#faucet</a>
+                        </p>
+                    </li>
                 </ul>
 
-                {/*GGrin Developers*/}
+                {/*Grin Developers*/}
                 <div className="py-4">
                     <h2 className="header-2">Grin Developers</h2>
                     <p><b>Your journey down the rabit hole starts here</b></p>
@@ -251,9 +346,87 @@ export default function Hub() {
                                 <a href="https://keybase.io/team/grincoin" className="text-primary">https://keybase.io/team/grincoin</a>
                             </p>
                         </li>
+                        <li><RhombusItem /> <b>Introduction to Grin:</b>
+                            <p className="pl-8">
+                                <a href="https://github.com/mimblewimble/grin/blob/master/doc/intro.md" className="text-primary">https://github.com/mimblewimble/grin/blob/master/doc/intro.md</a>
+                            </p>
+                        </li>
+                        <li><RhombusItem /> <b>Cuck(at)oo Cycle:</b>
+                            <p className="pl-8">
+                                <a href="https://github.com/tromp/cuckoo" className="text-primary">https://github.com/tromp/cuckoo</a>
+                            </p>
+                        </li>
+                        <li><RhombusItem /> <b>Why Grin:</b>
+                            <p className="pl-8">
+                                <a href="https://gist.github.com/phyro/ec37d8bfedd36102b0ea5824580d06e4" className="text-primary">https://gist.github.com/phyro/ec37d8bfedd36102b0ea5824580d06e4</a>
+                            </p>
+                        </li>
+                        <li><RhombusItem /> <b>Interactive transactions:</b>
+                            <p className="pl-8">
+                                <a href="https://phyro.github.io/what-is-grin/interactive_txs.html" className="text-primary">https://phyro.github.io/what-is-grin/interactive_txs.html</a>
+                            </p>
+                        </li>
+                        <li><RhombusItem /> <b>Grin's emission schedule:</b>
+                            <p className="pl-8">
+                                <a href="https://phyro.github.io/what-is-grin/grin_emission.html" className="text-primary">https://phyro.github.io/what-is-grin/grin_emission.html</a>
+                            </p>
+                        </li>
                     </ul>
                 </div>
 
+            </div>
+
+            {/* Mining Software section */}
+            <div className="py-4">
+                <h2 className="header-2">Mining Software</h2>
+                <ul className="pl-4 pt-2 space-y-4">
+                    <li><RhombusItem /> <b>Linux miner:</b>
+                        <p className="pl-8">
+                            <a href="https://github.com/mimblewimble/grin-miner" className="text-primary">https://github.com/mimblewimble/grin-miner</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Windows miner:</b>
+                        <p className="pl-8">
+                            <a href="https://github.com/mozkomor/GrinGoldMiner" className="text-primary">https://github.com/mozkomor/GrinGoldMiner</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Mining pool:</b>
+                        <p className="pl-8">
+                            <a href="http://mwgrinpool.com/" className="text-primary">http://mwgrinpool.com/</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+
+            {/* Additional Resources section */}
+            <div className="py-4">
+                <h2 className="header-2">Additional Resources</h2>
+                <ul className="pl-4 pt-2 space-y-4">
+                    <li><RhombusItem /> <b>Blockchain explorer:</b>
+                        <p className="pl-8">
+                            <a href="https://grinscan.net/" className="text-primary">https://grinscan.net/</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Mining Guides:</b>
+                        <p className="pl-8">
+                            <a href="https://www.coingecko.com/buzz/how-to-mine-grin" className="text-primary">How to mine Grin with GGM</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Wallet Guides:</b>
+                        <p className="pl-8">
+                            <a href="https://github.com/vault713/wallet713/blob/master/docs/usage.md" className="text-primary">Grin wallet713 user guide</a>
+                        </p>
+                        <p className="pl-8">
+                            <a href="https://walletlist.keybase.pub/" className="text-primary">Wallet recommendations for newcomers</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>FAQ:</b>
+                        <p className="pl-8">
+                            <a href="https://www.coingecko.com/buzz/grin-frequently-asked-questions" className="text-primary">Grincoin FAQ by CoinGecko</a>
+                        </p>
+                    </li>
+                </ul>
             </div>
 
             {/*Other link outs*/}
@@ -322,10 +495,43 @@ export default function Hub() {
                             <a href="https://grinpost.medium.com/" className="text-primary">https://grinpost.medium.com/</a>
                         </p>
                     </li>
+                    <li><RhombusItem />  <b>Some Grin art by Grincy:</b>
+                        <p className="pl-8">
+                            <a href="https://github.com/TomMualler/Grinchy-Grin" className="text-primary">https://github.com/TomMualler/Grinchy-Grin</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem />  <b>Grin official newsletter:</b>
+                        <p className="pl-8">
+                            <a href="https://grinnews.substack.com/" className="text-primary">https://grinnews.substack.com/</a>
+                        </p>
+                    </li>
 
                 </ul>
 
             </div>
+
+            {/* Documentation */}
+            <div className="py-4">
+                <h2 className="header-2">Documentation</h2>
+                <ul className="pl-4 pt-2 space-y-4">
+                    <li><RhombusItem /> <b>Documentation page:</b>
+                        <p className="pl-8">
+                            <a href="https://docs.grin.mw/" className="text-primary">https://docs.grin.mw/</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Wallet List:</b>
+                        <p className="pl-8">
+                            <a href="https://github.com/mimblewimble/docs/wiki/Community-projects#wallets" className="text-primary">https://github.com/mimblewimble/docs/wiki/Community-projects#wallets</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Grin 'original' wallet user guide:</b>
+                        <p className="pl-8">
+                            <a href="https://github.com/mimblewimble/docs/wiki/Wallet-User-Guide" className="text-primary">https://github.com/mimblewimble/docs/wiki/Wallet-User-Guide</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
 
             {/*External articles*/}
             <div className="py-4">
@@ -340,87 +546,125 @@ export default function Hub() {
                             <a href="https://smithandcrown.com/research/grin-mimblewimble/" className="text-primary">https://smithandcrown.com/research/grin-mimblewimble/</a>
                         </p>
                     </li>
+                    <li><RhombusItem /> <b>Grin Papyrus Collection:</b> Important documents and links from early development in 2016 to present
+                        <p className="pl-8">
+                            <a href="https://github.com/Grinnode-live/GRIN-papyrus" className="text-primary">https://github.com/Grinnode-live/GRIN-papyrus</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Old Mailing List Archive:</b>
+                        <p className="pl-8">
+                            <a href="https://lists.launchpad.net/mimblewimble/" className="text-primary">https://lists.launchpad.net/mimblewimble/</a>
+                        </p>
+                    </li>
 
                 </ul>
 
             </div>
 
+            <div className="py-4">
+                <h2 className="header-2">Articles and Research</h2>
+                <ul className="pl-4 pt-2 space-y-4">
+                    <li><RhombusItem /> <b>What is Grin:</b>
+                        <p className="pl-8">
+                            <a href="https://phyro.github.io/what-is-grin/mimblewimble.html" className="text-primary">https://phyro.github.io/what-is-grin/mimblewimble.html</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>BitcoinTalk Ann:</b>
+                        <p className="pl-8">
+                            <a href="https://bitcointalk.org/index.php?topic=5090427.0" className="text-primary">https://bitcointalk.org/index.php?topic=5090427.0</a>
+                        </p>
+                    </li>
+                    <li><RhombusItem /> <b>Grin Hub, links, exchanges, tools:</b>
+                        <p className="pl-8">
+                            <a href="https://github.com/grincc/hub" className="text-primary">https://github.com/grincc/hub</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
             {/*Mining Pools*/}
             <div className="py-4">
                 <h2 className="header-2">Mining Pools</h2>
-                <ul className="pl-4 pt-2 space-y-4" >
-                    <li><RhombusItem /> <b>How to mine with G1 Mini</b>
+                <ul className="pl-4 pt-2 space-y-4">
+                    <li><RhombusItem /> <b>How to mine with G1 Mini:</b>
                         <p className="pl-8">
                             <a href="https://forum.grin.mw/t/how-to-mine-grin-with-g1-mini-steps/9796" className="text-primary">https://forum.grin.mw/t/how-to-mine-grin-with-g1-mini-steps/9796</a>
                         </p>
                     </li>
-                    <li><RhombusItem /><a href="https://pool.always.vip/" className="text-primary pl-2 ">Always.vip</a></li>
+                    <li><RhombusItem /><a href="https://pool.always.vip/" className="text-primary pl-2">Always.vip</a></li>
                     <li><RhombusItem /><a href="https://grin.2miners.com/" className="text-primary pl-2">2Miners</a></li>
                     <li><RhombusItem /><a href="https://gaeapool.com/#/" className="text-primary pl-2">gaeapool</a></li>
                     <li><RhombusItem /><a href="https://grinmint.com/" className="text-primary pl-2">Grinmint</a></li>
                     <li><RhombusItem /><a href="https://solo-grin.2miners.com/" className="text-primary pl-2">2Miners SOLO</a></li>
-                    <li><RhombusItem /><a href="https://grin.herominers.com/" className="text-primary pl-2">HeroMiners</a></li>
-                    <li><RhombusItem /><a href="https://woolypooly.com/" className="text-primary pl-2">WoolyPooly</a></li>
+                    <li><RhombusItem /><a href="https://pool.easygrin.org/" className="text-primary pl-2">EasyGrin</a></li>
+                    <li><RhombusItem /><a href="https://solo.easygrin.org/" className="text-primary pl-2">Easy Grin SOLO</a></li>
+                    <li><RhombusItem /> <b>SOLO Mining Private Pool Guide:</b>
+                        <p className="pl-8">
+                            <a href="https://forum.grin.mw/t/solo-mining-private-pool-guide/10462" className="text-primary">https://forum.grin.mw/t/solo-mining-private-pool-guide/10462</a>
+                        </p>
+                    </li>
                 </ul>
             </div>
 
             {/*Asic Hardware Firms*/}
             <div className="py-4">
                 <h2 className="header-2">Asic Hardware Firms</h2>
-                <ul className="pl-4 pt-2 space-y-4" >
-                    <li><RhombusItem /><a href="http://ipollo.com/" className="text-primary pl-2 ">ipollo </a></li>
+                <ul className="pl-4 pt-2 space-y-4">
+                    <li><RhombusItem /><a href="http://ipollo.com/" className="text-primary pl-2">ipollo</a></li>
                     <li><RhombusItem /><a href="https://www.nhash.net/" className="text-primary pl-2">NHASH</a></li>
                     <li><RhombusItem /><a href="https://www.powpower.net/product/ipollo-g1-mini/" className="text-primary pl-2">Powpower</a></li>
                     <li><RhombusItem /><a href="https://www.newegg.com/p/0X6-09A3-00001" className="text-primary pl-2">Newegg</a></li>
                 </ul>
             </div>
 
-            {/*Exchanges */}
+          {/*Exchanges*/}
             <div className="py-4">
                 <h2 className="header-2">Exchanges</h2>
-                <ul className="pl-4 pt-2 space-y-4" >
-                    <li><RhombusItem /><a href="https://www.gateio.pro/trade/GRIN_USDT" className="text-primary pl-2 ">Gateio </a>
-                        <ul className="pl-12 list-disc">
-                            <li>KYC</li>
-                            <li>Deposit/Withdraw (using memo system)</li>
-                            <li>TOR Method</li>
-                            <li>Not available for EU Citizens</li>
-                        </ul>
-                    </li>
-                    <li><RhombusItem /><a href="https://tradeogre.com/exchange/BTC-GRIN" className="text-primary pl-2 ">Tradeogre </a>
+                <ul className="pl-4 pt-2 space-y-4">
+                    <li><RhombusItem /><a href="https://tradeogre.com/exchange/BTC-GRIN" className="text-primary pl-2">Tradeogre</a>
                         <ul className="pl-12 list-disc">
                             <li>No KYC</li>
                             <li>Slatepack Method</li>
                             <li>Deposit-Withdrawal is supported.</li>
                         </ul>
                     </li>
-                    <li><RhombusItem /><a href="https://www.bitforex.com/en/spot/grin_usdt" className="text-primary pl-2 ">Bitforex </a>
+                    <li><RhombusItem /><a href="https://www.gateio.pro/trade/GRIN_USDT" className="text-primary pl-2">Gateio</a>
                         <ul className="pl-12 list-disc">
                             <li>KYC</li>
-                            <li>Withdrawal supported</li>
-                            <li>https old method <i>(Grin++, Ironbelly wallets don't support https tx method.)</i></li>
+                            <li>Deposit/Withdraw (using Memo code)</li>
+                            <li>TOR Method</li>
+                            <li>Not available for EU Citizens</li>
                         </ul>
                     </li>
-                    <li><RhombusItem /><a href="https://100x.app/" className="text-primary pl-2 ">100x APP </a>
+                    <li><RhombusItem /><a href="https://www.coinw.com/frontSpot/spottrade?symbol=702" className="text-primary pl-2">CoinW</a>
+                        <ul className="pl-12 list-disc">
+                            <li>KYC</li>
+                            <li>Deposit/Withdrawal (using Memo code)</li>
+                            <li>TOR Method</li>
+                        </ul>
+                    </li>
+                    <li><RhombusItem /><a href="https://bisq.network/" className="text-primary pl-2">Bisq</a>
+                        <ul className="pl-12 list-disc">
+                            <li>No KYC</li>
+                            <li>Completely decentralized and community governed</li>
+                            <li>BTC-Grin trading-pair</li>
+                            <li>BTC collateral equivalent to asking price when selling Grin</li>
+                        </ul>
+                    </li>
+                    <li><RhombusItem /><a href="https://100x.app/" className="text-primary pl-2">100x APP</a>
                         <ul className="pl-12 list-disc">
                             <li>No KYC, peer to peer. While in beta requires whitelisting on Discord</li>
-                            <li>Escrow, Stable coin intermdiate</li>
+                            <li>Escrow, Stable coin intermediate</li>
                             <li>In beta, use at own Risk</li>
                             <li>Buy using Paypal, Venmo zelle</li>
                             <li>Actively promotes using Grin as cash</li>
                         </ul>
                     </li>
-                    <li><RhombusItem /><a href="https://www.zb.com/en/trade/grin_usdt" className="text-primary pl-2 ">ZB</a>
-                        <ul className="pl-12 list-disc">
-                            <li>KYC</li>
-                            <li>Deposit/Withdraw (using memo system)</li>
-                            <li>TOR Method</li>
-                        </ul>
-                    </li>
-
                 </ul>
+                <p className="italic mt-4">*Grin++, Ironbelly wallets don't support https tx method.</p>
+                <p className="italic">*** Check wallets if listening via <a href="https://grinnode.live/tools/wallet-checker" className="text-primary">Grin.nodelivecheck</a> or <a href="https://grinchck.uber.space/" className="text-primary">GrinAdresscheck</a></p>
+                <p className="italic mt-2">Disclaimer: Exchange and pool infos are taken from Grin users & community feedback, <strong>not an endorsement.</strong> Always do your research.</p>
             </div>
-
         </div>
     )
 }
